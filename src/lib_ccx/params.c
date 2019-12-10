@@ -1375,7 +1375,10 @@ int parse_parameters (struct ccx_s_options *opt, int argc, char *argv[])
 			}
 		}
 #endif
-
+		if(strcmp(argv[i], "-kf") == 0){
+			opt->kid_friendly = 1;
+			continue;
+		}
 		if (strcmp(argv[i], "-chapters") == 0){
 			opt->extract_chapters= 1;
 			continue;
