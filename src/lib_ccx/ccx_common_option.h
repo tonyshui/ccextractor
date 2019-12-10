@@ -143,6 +143,7 @@ struct ccx_s_options // Options from user parameters
 	int ocr_quantmode;				  // How to quantize the bitmap before passing to to tesseract (0=no quantization at all, 1=CCExtractor's internal)
 	char *mkvlang;                    // The name of the language stream for MKV
 	int analyze_video_stream;         // If 1, the video stream will be processed even if we're using a different one for subtitles.
+	int kid_friendly;				  //If 1, inserts [beep] in place of expletive in SRT file
 
 	/*HardsubX related stuff*/
 	int hardsubx_ocr_mode;
