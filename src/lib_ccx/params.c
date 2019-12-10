@@ -567,6 +567,7 @@ void print_usage (void)
 	mprint ("                       to 3 between the first 30 characters.\n");
 	mprint ("\n");
 	mprint ("Options that affect what kind of output will be produced:\n");
+	mprint ("			       -kf: expletives will be set to [bleep] for a kid-friendly audience. \n")
 	mprint ("            -chapters: (Experimental) Produces a chapter file from MP4 files.\n");
 	mprint ("                       Note that this must only be used with MP4 files,\n");
 	mprint ("                       for other files it will simply generate subtitles file.\n");
