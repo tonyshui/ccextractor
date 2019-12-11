@@ -71,6 +71,7 @@ void init_options (struct ccx_s_options *options)
 	options->mkvlang = NULL; // By default, all the languages are extracted 
 	options->ignore_pts_jumps = 1;
 	options->analyze_video_stream = 0;
+	options->kid_friendly = 0;
 
 	/*HardsubX related stuff*/
 	options->hardsubx_ocr_mode = 0;
