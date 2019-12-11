@@ -10,9 +10,9 @@ def main():
 	# print(srt)
 	# print(blacklist)
 	for expletive in blacklist.split():
-		print('censoring for:' + expletive)
+		print('censoring for: ' + expletive)
 		srt = censor(srt, expletive)
-		print('text now looks like this: ' + srt)
+		print('text now looks like this:\n' + srt)
 
 	print('done censoring! final text:\n' + srt)
 
