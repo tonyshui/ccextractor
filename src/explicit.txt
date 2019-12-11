@@ -1,0 +1,5 @@
+curse1
+word1
+curse2
+word2
+curse3

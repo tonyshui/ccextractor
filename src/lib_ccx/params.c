@@ -567,7 +567,7 @@ void print_usage (void)
 	mprint ("                       to 3 between the first 30 characters.\n");
 	mprint ("\n");
 	mprint ("Options that affect what kind of output will be produced:\n");
-	mprint ("			       -kf: expletives will be set to [bleep] for a kid-friendly audience. \n");
+	mprint ("            -kf: expletives will be set to [bleep] for a kid-friendly audience. \n");
 	mprint ("            -chapters: (Experimental) Produces a chapter file from MP4 files.\n");
 	mprint ("                       Note that this must only be used with MP4 files,\n");
 	mprint ("                       for other files it will simply generate subtitles file.\n");
@@ -2442,6 +2442,10 @@ int parse_parameters (struct ccx_s_options *opt, int argc, char *argv[])
 	if(opt->demux_cfg.auto_stream ==CCX_SM_MP4 && opt->input_source == CCX_DS_STDIN)
 	{
 		fatal (EXIT_INCOMPATIBLE_PARAMETERS, "MP4 requires an actual file, it's not possible to read from a stream, including stdin.\n");
+	}
+	if(opt->kid_friendly)
+	{
+		mprint("Kid-friendly subtitles generated.\n");
 	}
 
 	if(opt->extract_chapters)
